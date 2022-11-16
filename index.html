@@ -5,15 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Avenir</title>
+    <script src="assets/js/popper.min.js" async></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <section class="top">
-        <div class="container bg-black">
-            hello btn
-        </div>
-    </section>
-</body>
-<script src="assets/js/bootstrap.min.js"></script>
-</html>
 
+    <div class="loading-text">
+        <img src="assets/logo200.png" alt="">
+    </div>
+
+    <section class="top bg">
+
+        <div class="container-fluid p-5">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img src="assets/logo200.png"  alt="" srcset="">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">Mon Avenir</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Maternelle
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Présentation</a></li>
+                                  <li><a class="dropdown-item" href="#">Structure</a></li>
+                                  <li><a class="dropdown-item" href="#">Programme</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Primaire
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Présentation</a></li>
+                                  <li><a class="dropdown-item" href="#">Structure</a></li>
+                                  <li><a class="dropdown-item" href="#">Programme</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Collège
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Présentation</a></li>
+                                  <li><a class="dropdown-item" href="#">Structure</a></li>
+                                  <li><a class="dropdown-item" href="#">Programme</a></li>
+                                  <li><a class="dropdown-item" href="#">Projet</a></li>
+                                </ul>
+                            </li>
+                            <a class="nav-link" href="#">Historique</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="slider">
+            <div class="slide active">
+                <img class="carousel-image active" src="assets/photos/batiment/primaire-1.jpg" alt="">
+                <img class="carousel-image" src="assets/photos/classes/cm2-4.jpg" alt="">
+                <img class="carousel-image" src="assets/photos/classes/3eme.jpg" alt="">
+                <img class="carousel-image" src="assets/photos/recreation/recreation4.jpg" alt="">
+                <button class="pred" style="position: absolute; top:45%; left: 10px;" onclick="imagePred()">&lsaquo;</button>
+                <button class="next" style="position: absolute; top:45%; right: 10px;" onclick="imageSuiv()">&rsaquo;</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        
+    </section>
+
+</body>
+<script src="assets/js/bootstrap.js" defer></script>
+<script src="assets/js/script.js" async></script>
+</html>
